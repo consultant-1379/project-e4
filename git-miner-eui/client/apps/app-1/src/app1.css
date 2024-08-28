@@ -1,0 +1,29 @@
+:host {
+  display: block;
+  background-color: var(--layer1, #ebebeb);
+}
+@media (max-width: 900px) {
+  .layout__dashboard {
+    grid-template-columns: 1fr 1fr; /* two column layout*/
+  }
+}
+
+@media (max-width: 478px) {
+  .layout__dashboard {
+    display: flex;
+    flex-flow: column;
+    grid-template-columns: none;
+    padding-bottom: 0;
+  }
+  .layout__dashboard * {
+    margin-bottom: var(--space-small);
+  }
+}
+.layout__dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* three column layout*/
+  row-gap: var(--space-small);
+  column-gap: var(--space-small);
+  background-color: var(--layer1);
+  padding-bottom: var(--space-small);
+}

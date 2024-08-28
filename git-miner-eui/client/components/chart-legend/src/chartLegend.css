@@ -1,0 +1,18 @@
+/* style goes here */
+:host {
+  display: block;
+}
+
+:host([hidden]) {
+  display: none;
+}
+
+.euisdk-chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.euisdk-chart-legend * {
+  margin-bottom: var(--space-base, 8px);
+  margin-right: var(--space-base, 8px);
+}

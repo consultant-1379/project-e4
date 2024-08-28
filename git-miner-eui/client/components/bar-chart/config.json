@@ -1,0 +1,8 @@
+{
+  "script":"bar-chart/BarChart",
+  "id":"BarChart",
+  "data": {},
+  "dependencies":{
+    "@eui/lit-component":"0.12.x"
+  }
+}
